@@ -37,12 +37,13 @@ To validate the physical design pre-fabrication, a SPICE netlist was characteriz
 ## 📸 Project Gallery
 
 ### 1. Schematic Design
-[Schematic.pdf](https://github.com/user-attachments/files/28925923/Schematic.pdf)
+<img width="1076" height="738" alt="schematic" src="https://github.com/user-attachments/assets/c13e7e73-0eb8-498b-bd2e-85e660f74d35" />
+
 
 
 ### 2. PCB 3D Hardware Render
-<img width="1918" height="892" alt="3D Scratch backside view " src="https://github.com/user-attachments/assets/5b44850c-4a00-4c80-b0b9-aa121fc0389e" /><img width="1918" height="892" alt="3D Scratch view " src="https://github.com/user-attachments/assets/56f14dda-e17b-4512-b53e-4f0ec0fbd5a0" />
-
+width="1918" height="892" alt="3D Scratch view " src="https://github.com/user-attachments/assets/56f14dda-e17b-4512-b53e-4f0ec0fbd5a0" />
+<img width="1918" height="892" alt="3D Scratch backside view " src="https://github.com/user-attachments/assets/5b44850c-4a00-4c80-b0b9-aa121fc0389e" /><img 
 
 ### 3. LTspice Transient Waveform Graph
 <img width="1920" height="1080" alt="Waveform" src="https://github.com/user-attachments/assets/d0c1b668-b34b-4e31-b566-f6fc6db3352e" />
