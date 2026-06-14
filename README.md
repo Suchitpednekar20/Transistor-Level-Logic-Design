@@ -16,7 +16,7 @@ This project focuses on designing and verifying basic digital logic gates (NOT a
 ## 📐 Circuit & Physical Design Parameters
 
 ### 1. Circuit Topology
-* **NOT Gate (Inverter):** Implemented using a single NPN transistor (`Q2`) in a common-emitter configuration. Uses a When the input voltage `V(in_not)` transitions to 5V (Logic 1), the transistor drives into saturation, pulling the output node `V(out_not)` down to near 0V (Logic 0). \Omega$ base resistor (`R3`) for current limiting and a $330\ \Omega$ pull-up resistor (`R4`) at the collector output node.
+* **NOT Gate (Inverter):** Implemented using a single NPN transistor (`Q2`) in a common-emitter configuration. Uses a $1\text{k}\ \Omega$ base resistor (`R3`) for current limiting and a $330\ \Omega$ pull-up resistor (`R4`) at the collector output node.
 * **AND Gate:** Designed using a cascoded (series) connection of two NPN transistors (`Q1` and `Q3`), ensuring the pull-down path activates only when both inputs are tied High ($5\text{V}$).
 
 ### 2. PCB Layout Constraints
@@ -29,7 +29,7 @@ This project focuses on designing and verifying basic digital logic gates (NOT a
 ## 📊 Simulation & Logic Verification
 To validate the physical design pre-fabrication, a SPICE netlist was characterized using **Transient Analysis (`.tran 10m`)** in LTspice.
 
-* **Stimulus:** When the input voltage `V(in_not)` transitions to 5V (Logic 1), the transistor drives into saturation, pulling the output node `V(out_not)` down to near 0V (Logic 0).dynamic square pulse wave input.
+* **Stimulus:** $0\text{V}$ to $5\text{V}$ dynamic square pulse wave input.
 * **Result:** The Voltage Transfer Characteristics successfully confirm strict logic inversion. When the input voltage $V(\text{in_not})$ transitions to $5\text{V}$ (Logic 1), the transistor drives into saturation, pulling the output node $V(\text{out_not})$ down to near $0\text{V}$ (Logic 0).
 
 ---
