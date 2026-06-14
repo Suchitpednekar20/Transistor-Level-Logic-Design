@@ -1,0 +1,20 @@
+* Custom Resistor-Transistor Logic (RTL) Simulation
+.global VCC GND
+
+* 1. Power Supply (5V)
+Vvcc VCC GND 5
+
+* 2. Input Pulse (Square Wave for testing Input A)
+Vinput IN_NOT GND PULSE(0 5 0 1m 1m 4m 8m)
+
+* 3. NOT Gate (Inverter) Circuit Connection
+R3 IN_NOT BASE_Q2 1k
+Q2 OUT_NOT BASE_Q2 GND BC547B
+R4 VCC OUT_NOT 330
+
+* --- Transistor Model Specification ---
+.model BC547B NPN(Is=14.34f Xti=3 Eg=1.11 Vaf=74.03 Bf=255.9)
+
+* --- Simulation Control ---
+.tran 10m
+.end
