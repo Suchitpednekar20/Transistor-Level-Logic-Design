@@ -29,8 +29,8 @@ This project focuses on designing and verifying basic digital logic gates (NOT a
 ## 📊 Simulation & Logic Verification
 To validate the physical design pre-fabrication, a SPICE netlist was characterized using **Transient Analysis (`.tran 10m`)** in LTspice.
 
-* **Stimulus:** $0\text{V}$ to $5\text{V}$ dynamic square pulse wave input.
-* **Result:** The Voltage Transfer Characteristics successfully confirm strict logic inversion. When the input voltage $V(\text{in_not})$ transitions to $5\text{V}$ (Logic 1), the transistor drives into saturation, pulling the output node $V(\text{out_not})$ down to near $0\text{V}$ (Logic 0).
+* **Stimulus:**When the input voltage `V(in_not)` transitions to 5V (Logic 1), the transistor drives into saturation, pulling the output node `V(out_not)` down to near 0V (Logic 0). dynamic square pulse wave input.
+* **Result:** The Voltage Transfer Characteristics successfully confirm strict logic inversion. When the input voltage When the input voltage `V(in_not)` transitions to 5V (Logic 1), the transistor drives into saturation, pulling the output node `V(out_not)` down to near 0V (Logic 0). (Logic 1), the transistor drives into saturation, pulling the output node $V(\text{out_not})When the input voltage `V(in_not)` transitions to 5V (Logic 1), the transistor drives into saturation, pulling the output node `V(out_not)` down to near 0V (Logic 0). (Logic 0).
 
 ---
 
